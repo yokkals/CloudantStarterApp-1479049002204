@@ -1,0 +1,12 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: CloudantStarterApp
+  host: yokkals-liberty-watson
+  disk_quota: 1024M
+  services:
+  - CloudantStarterApp-cloudantNoSQLDB
+  - AlchemyAPI-8k
+  - availability-monitoring-auto
